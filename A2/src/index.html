@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Load Bootstrap's CSS from the node_modules/ dir. Run `npm install` first -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Helper styles for the Bootstrap table header -->
+    <link rel="stylesheet" href="./styles/bootstrap-header-table.css" />
+    <!-- Your styles can go in src/styles/styles.css -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>WEB422-Assignment 2-Siyi Yuan</title>
+  </head>
+  <body>
+
+
+    <!-- 
+
+      Please see the Assignment 2 PDF and README.md
+
+      All your HTML can go here.
+
+    -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="#">Assignment 2 - Employee Details</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+          <!-- <div class="well" id="data"> -->
+            <input type="text" class="form-control" id="employee-search" placeholder="Search for Empolyees">
+            <div class="row"> 
+                <!-- bootstrap-header-table -->
+                <div class="container bootstrap-header-table">
+                  <div class="row header-row">
+                      <div>
+                          <div class="col-xs-4 header-column">First Name</div>
+                          <div class="col-xs-4 header-column">Last Name
+                              <button type="button" class="btn btn-default" aria-label="Left Align">
+                                  <span class="glyphicon glyphicon-sort" aria-hidden="true"></span>
+                              </button>
+                          </div>
+
+                          <div class="col-xs-4 header-column">Position</div>
+                      </div>
+
+                  </div> 
+                  <div class="row body-rows" id="employees-table">
+                    <!--every employee will have their own body-row-->
+                  </div>
+                </div>
+            
+          </div>
+    </div>          
+  </div>
+</div>
+
+<!-- Bootstrap modal window -->
+<div class="modal fade" tabindex="-1" role="dialog" id ="genericModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body">
+        
+        <!--modal body using jQuery to populate this with the selected Employee's Address
+/ Telephone details as well as their Hire Date-->
+
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Latest compiled and minified jQuery 3.2.1 JavaScript -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap 3.3.7 JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--reference -->
+<script src="./index.js"></script> 
+
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/pretty-print-json@0.1/dist/pretty-print-json.css>
+<script src=https://cdn.jsdelivr.net/npm/pretty-print-json@0.1/dist/pretty-print-json.min.js></script>
+
+  </body>
+</html>
